@@ -1,0 +1,74 @@
+{
+  "name": "MAGNANAKAW",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "c883342f-38f8-4eba-9ddd-0f0504f23c19",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "97f01fd4-1d21-455f-9bc0-c0de898b5918",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "f79e90f6-5366-4b45-836b-aee384967d23",
+      "name": "If"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "0719c9ae-6bc4-4921-8e4b-9c72c6e3331f",
+  "meta": {
+    "instanceId": "f0f235414a1cd33e8c604f5b907ff57d5372b9f08553ce9a48a9fc53b85e96dc"
+  },
+  "id": "ekgSKioMF9WEwvT6",
+  "tags": []
+}
