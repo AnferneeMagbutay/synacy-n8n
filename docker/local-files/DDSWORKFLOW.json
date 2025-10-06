@@ -1,0 +1,28 @@
+{
+  "name": "DDSWORKFLOW",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d9a0eada-b8ac-46f3-8c1b-d6b5fe7d5cf3",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f1bf9aea-bfca-4cb4-9e6d-1733d8d9f475",
+  "meta": {
+    "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
+  },
+  "id": "kj8nPQcNh3b1AT8q",
+  "tags": []
+}
