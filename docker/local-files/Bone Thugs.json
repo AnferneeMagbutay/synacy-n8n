@@ -1,0 +1,28 @@
+{
+  "name": "Bone Thugs",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "404b7ae0-39c9-4322-b1d6-652a98203057",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "c004610f-0005-400b-93bb-b95b73cd04bc",
+  "meta": {
+    "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
+  },
+  "id": "o2rM7DqHZYwD6NLZ",
+  "tags": []
+}
