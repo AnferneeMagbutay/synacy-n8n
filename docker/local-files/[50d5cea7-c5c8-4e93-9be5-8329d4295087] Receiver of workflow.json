@@ -1,5 +1,5 @@
 {
-  "name": "[develop] Receiver of workflow",
+  "name": "[50d5cea7-c5c8-4e93-9be5-8329d4295087] Receiver of workflow",
   "nodes": [
     {
       "parameters": {
@@ -27,17 +27,10 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "b9831037-d1e8-48ad-b420-cb28d673dfc5",
+  "versionId": "36d6edfe-12b7-4f65-abc4-fbe682c6aa8e",
   "meta": {
     "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
   },
   "id": "owUbdj7DJ9IWsklR",
-  "tags": [
-    {
-      "name": "5d607cae-8dd8-4b2f-83ab-",
-      "id": "oYdyY6v8ft7IWhEw",
-      "createdAt": "2025-10-13T06:02:46.501Z",
-      "updatedAt": "2025-10-13T06:02:46.501Z"
-    }
-  ]
+  "tags": []
 }

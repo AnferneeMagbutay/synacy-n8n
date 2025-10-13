@@ -1,5 +1,5 @@
 {
-  "name": "[develop] Initiator For This Thing",
+  "name": "[db67db4d-3991-4953-a297-fe3aa3f7cd24] Initiator Workflow",
   "nodes": [
     {
       "parameters": {},
@@ -16,15 +16,13 @@
       "parameters": {
         "workflowId": {
           "__rl": true,
-          "value": "qm1ShEZyZGu1ZJYE",
           "mode": "id",
-          "cachedResultUrl": "/workflow/qm1ShEZyZGu1ZJYE"
+          "value": "={{ $json.id }}",
+          "cachedResultName": "={{ $json.id }}"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
-          "value": {
-            "name": "test"
-          },
+          "value": {},
           "matchingColumns": [
             "name"
           ],
@@ -57,7 +55,7 @@
     {
       "parameters": {
         "filters": {
-          "name": "[develop] Receiver of workflow"
+          "name": "[50d5cea7-c5c8-4e93-9be5-8329d4295087] Receiver of workflow"
         },
         "requestOptions": {}
       },
@@ -106,18 +104,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "ec48c35f-dba4-44da-81c1-e1f21dccef8f",
+  "versionId": "3b37311e-3724-4647-856c-f0f7d5ae9c70",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
   },
   "id": "8cRaSskQRBx7hfQV",
-  "tags": [
-    {
-      "name": "56b5010c-ab7a-4711-91ad-",
-      "id": "5SWhrXmUALHEbi4r",
-      "createdAt": "2025-10-13T06:01:49.903Z",
-      "updatedAt": "2025-10-13T06:01:49.903Z"
-    }
-  ]
+  "tags": []
 }
