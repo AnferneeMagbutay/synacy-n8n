@@ -1,0 +1,123 @@
+{
+  "name": "[develop] Initiator For This Thing",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d70fdae7-dbaa-4546-8b5a-b2c9f1fba9b5",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "qm1ShEZyZGu1ZJYE",
+          "mode": "id",
+          "cachedResultUrl": "/workflow/qm1ShEZyZGu1ZJYE"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "name": "test"
+          },
+          "matchingColumns": [
+            "name"
+          ],
+          "schema": [
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        416,
+        0
+      ],
+      "id": "e07501f7-93a5-4b4d-ba73-b464e7741714",
+      "name": "Call 'My workflow 2'"
+    },
+    {
+      "parameters": {
+        "filters": {
+          "name": "[develop] Receiver of workflow"
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "71a61a67-0455-401b-9792-4c2c3e72dfe4",
+      "name": "Get many workflows",
+      "credentials": {
+        "n8nApi": {
+          "id": "HEtD3X2z14pllP0A",
+          "name": "n8n account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many workflows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many workflows": {
+      "main": [
+        [
+          {
+            "node": "Call 'My workflow 2'",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "ec48c35f-dba4-44da-81c1-e1f21dccef8f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
+  },
+  "id": "8cRaSskQRBx7hfQV",
+  "tags": [
+    {
+      "name": "56b5010c-ab7a-4711-91ad-",
+      "id": "5SWhrXmUALHEbi4r",
+      "createdAt": "2025-10-13T06:01:49.903Z",
+      "updatedAt": "2025-10-13T06:01:49.903Z"
+    }
+  ]
+}

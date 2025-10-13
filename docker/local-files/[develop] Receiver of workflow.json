@@ -1,0 +1,43 @@
+{
+  "name": "[develop] Receiver of workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "name"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "6c92b01e-1fd8-445f-9257-84360a2cd70e",
+      "name": "When Executed by Another Workflow"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "b9831037-d1e8-48ad-b420-cb28d673dfc5",
+  "meta": {
+    "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
+  },
+  "id": "owUbdj7DJ9IWsklR",
+  "tags": [
+    {
+      "name": "5d607cae-8dd8-4b2f-83ab-",
+      "id": "oYdyY6v8ft7IWhEw",
+      "createdAt": "2025-10-13T06:02:46.501Z",
+      "updatedAt": "2025-10-13T06:02:46.501Z"
+    }
+  ]
+}
