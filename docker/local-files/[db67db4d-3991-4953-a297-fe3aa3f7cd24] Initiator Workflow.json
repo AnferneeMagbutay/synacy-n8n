@@ -1,5 +1,5 @@
 {
-  "name": "Initiator",
+  "name": "[db67db4d-3991-4953-a297-fe3aa3f7cd24] Initiator Workflow",
   "nodes": [
     {
       "parameters": {},
@@ -16,15 +16,13 @@
       "parameters": {
         "workflowId": {
           "__rl": true,
-          "value": "qm1ShEZyZGu1ZJYE",
           "mode": "id",
-          "cachedResultUrl": "/workflow/qm1ShEZyZGu1ZJYE"
+          "value": "={{ $json.id }}",
+          "cachedResultName": "={{ $json.id }}"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
-          "value": {
-            "name": "test"
-          },
+          "value": {},
           "matchingColumns": [
             "name"
           ],
@@ -48,16 +46,49 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
       "position": [
-        208,
+        416,
         0
       ],
       "id": "e07501f7-93a5-4b4d-ba73-b464e7741714",
       "name": "Call 'My workflow 2'"
+    },
+    {
+      "parameters": {
+        "filters": {
+          "name": "[50d5cea7-c5c8-4e93-9be5-8329d4295087] Receiver of workflow"
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "71a61a67-0455-401b-9792-4c2c3e72dfe4",
+      "name": "Get many workflows",
+      "credentials": {
+        "n8nApi": {
+          "id": "HEtD3X2z14pllP0A",
+          "name": "n8n account"
+        }
+      }
     }
   ],
   "pinData": {},
   "connections": {
     "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many workflows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many workflows": {
       "main": [
         [
           {
@@ -73,10 +104,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "6aa7ed3e-ad09-4b6e-a4fa-830c59e8f18d",
+  "versionId": "3b37311e-3724-4647-856c-f0f7d5ae9c70",
   "meta": {
+    "templateCredsSetupCompleted": true,
     "instanceId": "ba3eeba64b0864acf0dfdefc6182399491cb0cebc9941fb28e5a627d8114cc46"
   },
-  "id": "4golq42Osjrw3uNs",
+  "id": "8cRaSskQRBx7hfQV",
   "tags": []
 }
